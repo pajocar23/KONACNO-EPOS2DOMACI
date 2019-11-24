@@ -692,13 +692,14 @@
 
 /* PROAOSBIUDPAOSIUDSDBNIA*/
 
+/*slick propertis*/
 .slick-prev:before {
-    color: #f06800;
+    color: black;
   }
 .slick-next:before {
-    color: #f06800;
+    color: black;
 }
-
+/* kraj slick propertis*/
 .Slick-container{
     display: flex;
     justify-content: center;
