@@ -685,7 +685,7 @@ body{
     background-color:#f06800;
   }
    
-  @media screen and (max-width: 600px){
+  /* @media screen and (max-width: 600px){
     .contact-form{
       flex-direction: column;
     }
@@ -695,12 +695,25 @@ body{
     .input-fields,
     .msg{
       width: 100%;
-    }
+    } */
 /*forma*/
 
 /*media*/
 
 @media all and (max-width:500px) {
+
+    contact-form{
+        flex-direction: column;
+      }
+      .msg textarea{
+        height: 80px;
+      }
+      .input-fields,
+      .msg{
+        width: 100%;
+      }
+
+
     .top-bar{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -756,6 +769,18 @@ body{
 }
 
 @media all and (max-width: 800px) {
+    contact-form{
+        flex-direction: column;
+      }
+      .msg textarea{
+        height: 80px;
+      }
+      .input-fields,
+      .msg{
+        width: 100%;
+      }
+
+
     .top-bar{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
