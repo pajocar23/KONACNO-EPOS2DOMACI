@@ -323,7 +323,7 @@ body{
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .partner-items {
@@ -340,7 +340,7 @@ body{
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .socialNetworks-items {
@@ -357,7 +357,7 @@ body{
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .partner-items a {
@@ -623,24 +623,30 @@ body{
 /*forma*/
 .wrapper{
     padding: 0 20px;
+    width: 100%;
   }
    
   .contact-form{
     display: flex;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
-    
+    background: rgba(0,0,0,0.8);
+    padding: 3rem 2rem;
+  
   }
    
   .input-fields{
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
+    margin-right: 4%;
     font-size: 20px;
   }
    
   .input-fields, .msg{
-    width: 100%;
+    width: 48%;
+  }
+  #email{
+      width: 80%;
   }
    
   .input-fields .input, 
@@ -648,15 +654,16 @@ body{
     margin: 10px 0;
     background: transparent;
     border: 0px;
-    border: 2px solid whitesmoke;
+    border: 2px solid #c5ecfd;
     padding: 10px;
-    color: whitesmoke;
+    color: #c5ecfd;
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   p.gender{
-    color: whitesmoke;
+    color: #f06800;
+    font-size: 10px;
   }
    
   .msg textarea{
@@ -685,7 +692,7 @@ body{
     background-color:#f06800;
   }
    
-  /* @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px){
     .contact-form{
       flex-direction: column;
     }
@@ -695,24 +702,15 @@ body{
     .input-fields,
     .msg{
       width: 100%;
-    } */
+    }
+}
 /*forma*/
 
 /*media*/
 
 @media all and (max-width:500px) {
 
-    contact-form{
-        flex-direction: column;
-      }
-      .msg textarea{
-        height: 80px;
-      }
-      .input-fields,
-      .msg{
-        width: 100%;
-      }
-
+    
 
     .top-bar{
         -webkit-box-orient: vertical;
@@ -769,16 +767,7 @@ body{
 }
 
 @media all and (max-width: 800px) {
-    contact-form{
-        flex-direction: column;
-      }
-      .msg textarea{
-        height: 80px;
-      }
-      .input-fields,
-      .msg{
-        width: 100%;
-      }
+   
 
 
     .top-bar{
