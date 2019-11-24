@@ -65,10 +65,30 @@
         <div class="contact-text">
             <div class="contact-items">
                 <h2>Contact Us</h2>
-                <input id = "name" type="text" placeholder="Your name...">
-                <input id = "email" type="text" placeholder="Your email...">
-                <textarea id = "textarea" cols="20" rows="20" placeholder="Your message here..."></textarea>
-                <a id = "submit" href="">Submit</a>
+                <!-- asddsadaddsadsadada -->
+                <form onsubmit="return validateForm()">
+
+                        <div class="wrapper">
+                            <div class="contact-form">
+                    
+                                <div class="input-fields">
+                                    <input type="text" id="name"class="input" placeholder="Name">
+                                    <input type="email" id="email" class="input" placeholder="Email"> 
+                                    <input type="text" id="phone" class="input" placeholder="Phone">
+                                    <input type="text" id="subject" class="input" placeholder="Subject">
+                                    <p class="gender">
+                                        <input type="radio" name="gender" value="Male"> Male &nbsp;
+                                        <input type="radio" name="gender" value="Female"> Female
+                                    </p>
+                                </div>
+                                <div class="msg">
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                    <button class="btn" type="submit">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- adsdadadsadasdasdsadsad -->
+                <!-- <a id = "submit" href="">Submit</a> -->
             </div>
         </div>
         <div class="partner-text">
@@ -110,5 +130,6 @@
       cssEase: 'ease-in-out'
     });
 </script>
+<script src="javascript/forma.js"></script>
 </body>
 </html>

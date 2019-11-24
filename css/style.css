@@ -288,6 +288,7 @@ body{
     flex: 1;
     padding: 3%;
     text-align: center;
+    display: flex;
 }
 
 .partner-text {
@@ -617,6 +618,85 @@ body{
 .footer span a:hover {
     text-decoration: underline;
 }
+
+
+/*forma*/
+.wrapper{
+    padding: 0 20px;
+  }
+   
+  .contact-form{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    
+  }
+   
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    font-size: 20px;
+  }
+   
+  .input-fields, .msg{
+    width: 100%;
+  }
+   
+  .input-fields .input, 
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    color: whitesmoke;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  p.gender{
+    color: whitesmoke;
+  }
+   
+  .msg textarea{
+    height: 212px;
+  }
+   
+  ::-webkit-input-placeholder {
+    color: #f06800;
+    font-size: 1rem;
+  }
+   
+  .btn {
+      background-color: rgb(43, 49, 63);
+      text-align: center;
+      padding: 15px;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+      font-size: 20px;
+  }
+
+  .btn:hover{
+    background-color:#f06800;
+  }
+   
+  @media screen and (max-width: 600px){
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+/*forma*/
 
 /*media*/
 
