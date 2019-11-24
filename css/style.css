@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 *{margin: 0; padding: 0;}
 
+body{
+    font-family:"Montserrat",sans-serif;
+}
+
 /*top-bar*/
 #contactC{
     color:#f06800;
@@ -67,7 +71,7 @@
     color: rgb(53, 52, 52);
     font-size: 20px;
     text-decoration: none;
-    font-family:"Montserrat",sans-serif;
+    
 }
 
 .menu ul li a:hover {
@@ -97,7 +101,7 @@
     margin: auto;
     text-align: center;
     width: 50%;
-    font-family: sans-serif;
+    
 }
 
 .banner-text-items h2:hover{
@@ -129,10 +133,13 @@
     -o-background-size: cover;
     background-size: cover;
     z-index: 1;
+    height:400px;
+    
 }
 
 .banner1 h2 {
     color: white;
+    
 }
 
 /*main content home.html*/
@@ -142,7 +149,7 @@
     background-color: #f06800;
     border-bottom: 3px solid black;
     height: 60px;
-    font-family:"Montserrat",sans-serif;
+    
     font-size:15px;
     padding-top:22.5px;
     text-align: center;
@@ -177,7 +184,7 @@
 }
 
 .main1 h2 {
-    font-family:"Montserrat",sans-serif;
+    
     font-size: 30px;
 }
 
@@ -207,7 +214,7 @@
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    padding: 5% 0;
+    padding: 1% 0;
 }
 
 .main2{
@@ -220,7 +227,7 @@
 }
 
 .main2 h2 {
-    font-family:"Montserrat",sans-serif;
+    
     font-size: 30px;
     color: white;
 }
@@ -358,7 +365,7 @@
     width: 30%;
     text-decoration: none;
     color: white;
-    font-family:"Montserrat",sans-serif;
+   
 }
 
 .partner-items a:hover {
@@ -382,21 +389,21 @@
     color: #fff;
     font-size: 40px;
     margin-bottom: 18px;
-    font-family:"Montserrat",sans-serif;
+    
 }
 
 .partner-items h2 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 18px;
-    font-family:"Montserrat",sans-serif;
+   
 }
 
 .socialNetworks-items h2 {
     color: #fff;
     font-size: 40px;
     margin-bottom: 18px;
-    font-family:"Montserrat",sans-serif;
+    
 }
 
 .contact-items h2:hover {
@@ -443,7 +450,7 @@
     text-decoration: none;
     text-transform: uppercase;
     opacity: 0.5;
-    font-family:"Montserrat",sans-serif;
+   
 }
 
 .contact-items a:hover {
@@ -480,14 +487,14 @@
 }
 
 .contact-text1 span{
-    font-size: 100px;
+    font-size: 50px;
     text-transform: uppercase;
     color: coral;
-    font-family:"Montserrat",sans-serif;
+   
 }
 
 .contact-text1 span:hover{
-    font-size: 100px;
+    font-size: 50px;
     text-transform: uppercase;
     color: blanchedalmond;
 }
@@ -502,10 +509,10 @@
 }
 
 .partner-text1 span{
-    font-size: 110px;
+    font-size: 60px;
     text-transform: uppercase;
     color: coral;
-    font-family:"Montserrat",sans-serif;
+    
 }
 
 .partner-text1 span:hover{
@@ -523,10 +530,10 @@
 }
 
 .socialNetworks-text1 span{
-    font-size: 110px;
+    font-size: 60px;
     text-transform: uppercase;
     color: coral;
-    font-family:"Montserrat",sans-serif;
+    
 }
  
 .socialNetworks-text1 span:hover{
@@ -543,10 +550,10 @@
 }
 
 .socialNetworks-text2 span{
-    font-size: 110px;
+    font-size: 60px;
     text-transform: uppercase;
     color: coral;
-    font-family:"Montserrat",sans-serif;
+   
 }
 
 .socialNetworks-text2 span:hover{
@@ -558,7 +565,7 @@
     font-style: oblique;
     color:blanchedalmond;
     font-size: 30px;
-    font-family:"Montserrat",sans-serif;
+    
 }
 
 #p:hover {
@@ -649,6 +656,23 @@
         -ms-flex-direction: column;
         flex-direction: column;
     }
+
+    .main-content2{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .contact1{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
 }
 
 @media all and (max-width: 800px) {
@@ -687,6 +711,20 @@
         -ms-flex-direction: column;
         flex-direction: column;
     }
+    .main-content2{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .contact1{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
 }
 
 
@@ -694,10 +732,10 @@
 
 /*slick propertis*/
 .slick-prev:before {
-    color: black;
+    color: #f06800;
   }
 .slick-next:before {
-    color: black;
+    color: #f06800;
 }
 /* kraj slick propertis*/
 .Slick-container{

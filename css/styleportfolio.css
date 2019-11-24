@@ -99,7 +99,7 @@
    margin: auto;
    text-align: center;
    width: 50%;
-   font-family: sans-serif;
+ 
 }
 
 .banner-text-items h2:hover{
@@ -326,7 +326,7 @@ input::placeholder{
     margin: auto;
     text-align: center;
     width: 50%;
-    font-family: sans-serif;
+    
 }
 
 
@@ -342,32 +342,6 @@ input::placeholder{
 
 
 /*main content home.html*/
-
-.main-content{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    padding: 0 0;
-    
-    width: 100%;
-}
-
-.main1{
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 3%;
-    text-align: center;
-   
-}
 
 
 
@@ -435,37 +409,28 @@ input::placeholder{
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
    
-
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-   
     background: url("../images/ban3.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     z-index: 5;
-    width: 100%;
-
+   
 }
 
 .main1{
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 3%;
-    text-align: center;
-   
+    border-bottom: 5px solid #f06800;
 }
+.main1:nth-child(1){
+    border-top: 5px solid #f06800;
+}
+
+.main1 .hoverP{
+    height: 100%;
+    width: 100%;
+}
+
+
 
 /* drugi model*/
 .modal2{
@@ -636,6 +601,69 @@ input::placeholder{
     pointer-events: all;
 }
 
+
+/*media*/
+
+@media screen and(max-width:1200px){
+    .main1{
+        width:40%;
+    }
+    .banner{
+        width:100%;
+    }
+
+    .naslov{
+        width: 40%;
+    }
+
+
+}
+@media screen and(max-width:600px){
+    .main1{
+        width:90%;
+    }
+    .banner{
+        width:100%;
+    }
+    .naslov{
+        width: 40%;
+    }
+}
+
+
+
+@media all and (max-width:500px) {
+    .top-bar{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .menu ul li{
+        padding: 5px;
+    }
+    .banner-text-items {
+        width: 100%;
+    }
+    .banner-text-items h2 {
+        font-size: 1.5em;
+    }
+   
+}
+
 @media all and (max-width: 800px) {
     .top-bar{
         -webkit-box-orient: vertical;
@@ -665,11 +693,5 @@ input::placeholder{
     .banner-text-items h2 {
         font-size: 1.5em;
     }
-    .main-content {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
+   
 }
