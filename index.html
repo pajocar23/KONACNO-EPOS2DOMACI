@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web site</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body class="body">
     <div class="top-bar">
@@ -34,25 +39,28 @@
         <h1>Supported systems</h1>
     </div>
 
-
+<div class="Slick-container">
     <div class="main-content">
         <div class="main1">
             <h2>Android</h2>
-            <img src="images/android.svg" alt="Android" width = 300 height=300>
+            <img src="images/android.svg" alt="Android" width = 250 height=250>
         </div>
         <div class="main1">
                 <h2>iOS</h2>
-                <img src="images/ios13.png" alt="ios" width = 300 height= 300>
+                <img src="images/ios13.png" alt="ios" width = 250 height= 250>
         </div>
         <div class="main1">
                 <h2>Desktop</h2>
-                    <img src="images/pc.png" alt="react" width = 360 height= 360>
+                    <img src="images/pc.png" alt="react" width = 250 height= 250>
         </div>
         <div class="main1">
             <h2>Xbox</h2>
-            <img src="images/xbox.png" alt="Android" width = 300 height=300>
+            <img src="images/xbox.png" alt="Android" width = 250 height=250>
         </div>
     </div>
+</div>
+
+
     <div class="contact">
         <div class="contact-text">
             <div class="contact-items">
@@ -90,5 +98,17 @@
         </span>
     </div>
     <script src="javascript/skripta.js"></script>
+
+
+<!-- (html comment removed:  jQuery ) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- (html comment removed:  Slick ) -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $('.main-content').slick({
+      fade: true,
+      cssEase: 'ease-in-out'
+    });
+</script>
 </body>
 </html>
